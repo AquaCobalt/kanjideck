@@ -1,0 +1,102 @@
+body {
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    font-size: 30px; 
+    background-color: #222222; 
+    color: #ffffff; 
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    margin: 30px 0;
+}
+
+h1 {
+    color: #fffefe;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 20px;   /* space from the top of the page */
+    margin-bottom: 20px; /* space below heading */
+}
+
+.solid-button {
+    text-decoration: none;
+    padding: 12px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2-px;
+    font-weight: 1;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    user-select: none;
+}
+
+.solid-button:hover {
+    background-color: #c5c5c5; 
+    color: #000000;
+    font-weight: '100';
+}
+
+.solid-button:active {
+    transform: scale(0.99); 
+}
+
+.neo-button {
+    text-decoration: none;
+    padding: 12px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #2b7b44, #204068);
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.neo-button:hover {
+    background: linear-gradient(90deg, #3ca85a, #30527f);
+}
+
+.neo-button:active {
+    transform: scale(0.95);
+}
+
+.simple-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #9fffca;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+.simple-button:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+.simple-button:active {
+    color: #ffffff; 
+    border-bottom: 2px solid #ffffff; 
+}
+.kanji {
+            font-size: 200px;
+            margin: 20px 0;
+        }
+
+footer {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(62, 62, 62); 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 0px 0; 
+    font-size: 16px; 
+    line-height: 1;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2); 
+}

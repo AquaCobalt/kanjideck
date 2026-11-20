@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+
+    <!-- The CSS stuff idk -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap">
+
+<div class ="flashcard">
+    <body> 
+        <div id="kanji" class="kanji">
+            
+        </div>
+        <div class = "back">
+            <div class="meaning">
+                ㅤ
+            </div>
+            <div class="reading">
+                ㅤ
+            </div>
+        </div>
+            <br>
+        <div class ="solid-button">
+            Show Card
+        </div>
+
+        
+    </body>
+</div>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    .subtext {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+    
+</style>
+
+
+<script>
+
+const level_0 = [
+ {kanji: "一", meaning: "One", reading: "いち (Ichi)"},
+ {kanji: "二", meaning: "Two", reading: "に (Ni)"},
+ {kanji: "三", meaning: "Three", reading: "さん (San)"},
+ {kanji: "四", meaning: "Four", reading: "よん (Yon), し (Shi)"},
+ {kanji: "五", meaning: "Five", reading: "ご (Go)"},
+ {kanji: "六", meaning: "Six", reading: "ろく (Roku)"},
+ {kanji: "七", meaning: "Seven", reading: "しち (Shichi), なな (Nana)"},
+ {kanji: "八", meaning: "Eight", reading: "はち (Hachi)"},
+ {kanji: "九", meaning: "Nine", reading: "く (Ku), きゅう (Kyuu)"},
+ {kanji: "十", meaning: "Ten", reading: "じゅう (Juu)"},
+ 
+ {kanji: "山", meaning: "Mountain", reading: "Kun: やま (Yama), On: サン (San)"},
+ {kanji: "人", meaning: "Person", reading: "Kun: ひと (Hito), On: ジン (Jin)"},
+ {kanji: "女", meaning: "Woman", reading: "Kun: おんな (Onna), On: ジョ (Jo)"},
+ {kanji: "田", meaning: "Rice Field", reading: "Kun: た (Ta), On: デン (Den)"},
+ {kanji: "木", meaning: "Tree", reading: "Kun: き (Ki), On: モク (Moku)"},
+ {kanji: "大", meaning: "Big", reading: "Kun: おお (Oo), On: タイ (Tai)"},
+
+
+
+]
+
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+
+let current = 0;
+
+document.querySelector(".solid-button").addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * level_0.length);
+    const result = level_0[randomIndex];
+
+  document.querySelector(".kanji").textContent = result.kanji;
+  document.querySelector(".meaning").textContent = result.meaning;
+  document.querySelector(".reading").textContent = result.reading;
+});
+
+</script>
