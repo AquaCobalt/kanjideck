@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap">
 
-<div class ="flashcard">
-    <body> 
+</head>
+<body>
+    <div class ="flashcard">
+     
         <div id="kanji" class="kanji">
             
         </div>
-        <div class = "back">
+        <div class = "back hidden">
             <div class="meaning">
                 ㅤ
             </div>
@@ -25,14 +27,18 @@
             </div>
         </div>
             <br>
-        <div class ="solid-button">
+        <div id="flip-button" class="solid-button">
             Show Card
         </div>
-
+        <div id="again-button" class="solid-button hidden">
+            Again
+        </div>
+    </div>
         
-    </body>
-</div>
-</head>
+    <script src="script.js"></script>
+</body>
+
+
 <style>
     body {
         text-align: center;
@@ -45,6 +51,7 @@
 </style>
 
 
+<!--
 <script>
 
 const level_0 = [
@@ -84,3 +91,4 @@ document.querySelector(".solid-button").addEventListener("click", () => {
 });
 
 </script>
+-->

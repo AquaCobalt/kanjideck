@@ -23,7 +23,7 @@ h1 {
     text-decoration: none;
     padding: 12px 20px;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 2-px;
+    font-size: 30px;
     font-weight: 1;
     color: #000000;
     background-color: #ffffff;
@@ -32,6 +32,8 @@ h1 {
     cursor: pointer; 
     transition: background-color 0.3s ease, transform 0.1s ease;
     user-select: none;
+    top: 500px;
+
 }
 
 .solid-button:hover {
@@ -43,6 +45,7 @@ h1 {
 .solid-button:active {
     transform: scale(0.99); 
 }
+
 
 .neo-button {
     text-decoration: none;
@@ -85,7 +88,25 @@ h1 {
 .kanji {
             font-size: 200px;
             margin: 20px 0;
-        }
+}
+
+
+.back {
+    height: 80px;
+}
+.back.hidden {
+    visibility: hidden;
+    display: block;
+}
+.solid-button.hidden {
+    display: none;
+}
+
+
+
+.hidden {
+    display: none;
+}
 
 footer {
     position: fixed; 
