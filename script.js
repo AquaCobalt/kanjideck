@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
         {kanji: "田", meaning: "Rice Field", reading: "Kun: た (Ta), On: デン (Den)"},
         {kanji: "木", meaning: "Tree", reading: "Kun: き (Ki), On: モク (Moku)"},
         {kanji: "大", meaning: "Big", reading: "Kun: おお (Oo), On: タイ (Tai)"},
-        {kanji: "中", meaning: "Middle, Center", reading: "Kun: なか (Naka), On: チュウ (Chuu)"},
+        {kanji: "中", meaning: "Middle, Center", reading: "Kun: ナカ (Naka), On: チュウ (Chuu)"},
+        {kanji: "水", meaning: "Water", reading: "Kun: みず (Mizu), On: スイ (Sui)"},
+        {kanji: "氷", meaning: "Ice", reading: "Kun: こおり (Koori), On: ヒョウ (Hyou)"},
         
         {kanji: "日", meaning: "Sun", reading: "Kun: ひ (Hi), On: ニチ (Nichi)"},
         {kanji: "月", meaning: "Moon", reading: "Kun: つき (Tsuki), On: ゲツ (Getsu)"},
